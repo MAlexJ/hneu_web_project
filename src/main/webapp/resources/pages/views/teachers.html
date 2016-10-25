@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <p></p>
+        <div class="col s12 center"><h5>Расписание занятий ХНЭУ</h5></div>
+
+        <div class="col s12  offset-m1 m10 offset-l2 l8">
+            <div class="card-panel blue-grey darken-1">
+                <div class="card-content">
+                    <p></p>
+                    <!-- Кафедра -->
+                    <div class="row">
+                        <div class="col s12 l4 text-white">
+                            <h6 class="white-text"><b>Кафедра</b></h6>
+                        </div>
+                        <div class="col s12 l8">
+                            <select style="display: block"
+                                    ng-model="imgDel"
+                                    ng-options="imgDel.name for imgDel in imagesDel">
+                                <option value="" disabled="">Пожалуйста, выберите...</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Преподаватель -->
+                    <div class="row">
+                        <div class="col s12 l4 text-white">
+                            <h6 class="white-text"><b>Преподаватель</b></h6>
+                        </div>
+                        <div class="col s12 l8">
+                            <select style="display: block"
+                                    ng-model="imgDel"
+                                    ng-options="imgDel.name for imgDel in imagesDel">
+                                <option value="" disabled=""></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- or -->
+                    <div class="row text-white center">
+                        <!--<div class="col s12  ">-->
+                            <h6 class="white-text"><b>-- или ---</b></h6>
+                        <!--</div>-->
+                    </div>
+
+                    <!-- Поиск -->
+                    <div class="row">
+                        <div class="col s12 l4 text-white">
+                            <h6 class="white-text"><b>Группа</b></h6>
+                        </div>
+                        <div class="col s12 l8">
+                            <select style="display: block"
+                                    ng-model="imgDel"
+                                    ng-options="imgDel.name for imgDel in imagesDel">
+                                <option value="" disabled=""></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Расписание -->
+                    <div class="row">
+                        <div class="col s12 m3 l3">
+                            <p>
+                                <button class="waves-effect waves-light btn col s12" ng-click="deleteImg(imgDel.id)">
+                                    Расписание
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

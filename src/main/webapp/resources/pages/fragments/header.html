@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+<nav th:fragment="header" class=" light-blue darken-3">
+    <div class="container">
+        <div class="nav-wrapper">
+            <a href="#/" class="brand-logo">
+               <h5 style="margin: 18px">ХНЭУ</h5>
+            </a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse s8"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down" bs-active-link="">
+                <li class="active"><a href="#/home">На группу</a></li>
+                <li><a href="#/teachers">На преподавателя</a></li>
+                <li><a href="#/timetable">Расписание звонков</a></li>
+                <li><a href="#/mobiles">Мобильные приложения</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo" bs-active-link="" style="transform: translateX(0px);">
+                <li><img src="http://www.hneu.edu.ua/web/themes/hneu/images/header/header-down/logo.png"
+                         style="width: 100%; padding-top: 20px"/></li>
+                <li class="active"><a class="waves-effect waves-teal" href="#/home">На группу</a></li>
+                <li><a class="waves-effect waves-teal" href="#/teachers">На преподавателя</a></li>
+                <li><a class="waves-effect waves-teal" href="#/timetable">Расписание звонков</a></li>
+                <li><a class="waves-effect waves-teal" href="#/mobiles">Мобильные приложения</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</html>
