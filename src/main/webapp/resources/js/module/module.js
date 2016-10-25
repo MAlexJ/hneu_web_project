@@ -10,8 +10,6 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
         }
     );
 
-
-
     // ************  Home Page  ******************
     $routeProvider.when('/home',
         {
@@ -57,49 +55,5 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
     // ************  Default Page  ******************
     $routeProvider.otherwise({redirectTo: '/home'});
 });
-
-// ADMIN
-var myAdmin = angular.module('myAdmin', ["ngRoute"]).config(function ($routeProvider) {
-
-    // ************  Home Page  ******************
-    $routeProvider.when('/home',
-        {
-            templateUrl: './admin/adminHome.html',
-            controller: 'adminHomeController'
-        });
-
-    // ************  Create Page  ******************
-    $routeProvider.when('/create',
-        {
-            templateUrl: './admin/adminCreate.html',
-            controller: 'adminCreateController'
-        });
-
-    // ************  Update Page  ******************
-    $routeProvider.when('/update',
-        {
-            templateUrl: './admin/adminUpdate.html',
-            controller: 'adminUpdateController'
-        });
-
-    // ************  Delete Page  ******************
-    $routeProvider.when('/delete',
-        {
-            templateUrl: './admin/adminDelete.html',
-            controller: 'adminDeleteController'
-        });
-
-    // ************  View Page  ******************
-    $routeProvider.when('/view',
-        {
-            templateUrl: './admin/adminView.html',
-            controller: 'adminViewController'
-        });
-
-    // ************  Default Page  ******************
-    $routeProvider.otherwise({redirectTo: '/home'});
-});
-
-
 
 

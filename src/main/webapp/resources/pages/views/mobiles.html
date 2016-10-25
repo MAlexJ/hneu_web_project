@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" xmlns:th="http://www.thymeleaf.org">
     <div class="row">
         <p></p>
         <div class="col s12 center"><h5>Мобильные приложения для расписания</h5></div>
@@ -6,7 +6,8 @@
         <div class="col s12">
             <ul class="collapsible" data-collapsible="expandable">
                 <li>
-                    <div class="collapsible-header active"><i class="material-icons">filter_drama</i><b>Расписание вузов</b>
+                    <div class="collapsible-header active"><i class="material-icons">filter_drama</i><b>Расписание
+                        вузов</b>
                     </div>
                     <div class="collapsible-body"><p>
                         <b>Расписание вузов</b><br/>
@@ -15,7 +16,8 @@
                         <br/>
                         Скачайте приложение, и актуальное расписание вуза всегда будет под рукой.<br/>
                         Возможности - автоматически обновляемое расписание;<br/>
-                        - избранное, в которое можно добавлять расписание группы, преподавателя и друзей из других групп и вузов;<br/>
+                        - избранное, в которое можно добавлять расписание группы, преподавателя и друзей из других групп
+                        и вузов;<br/>
                         - проверка адреса аудитории<br/>
                         <br/><br/>
                         Актуальный список вузов на http://raspisaniye-vuzov.ru/
@@ -26,27 +28,54 @@
         </div>
 
 
-        <div class="col s12 m4">
-            <div class="card-panel teal">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+        <div class="col s12 m12 l4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../../img/aple_app.jpg" style="width: 110px; height: 110px;margin: 10px"
+                         th:src="@{/resources/img/aple_app.jpg}"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Download</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://itunes.apple.com/ru/app/raspisanie-vuzov/id631171099?mt=8"  style="font-size: 10pt">Apple Store</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="col s12 m4">
-            <div class="card-panel teal">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+        <div class="col s12 m12 l4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../../img/google_play.png" style="width: 120px; height: 120px;"
+                         th:src="@{/resources/img/google_play.png}"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Download</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://itunes.apple.com/ru/app/raspisanie-vuzov/id631171099?mt=8"  style="font-size: 10pt">Google Store</a>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="col s12 m4">
-            <div class="card-panel teal">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+        <div class="col s12 m12 l4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../../img/windows_app.png" style="width: 120px; height: 120px;"
+                         th:src="@{/resources/img/windows_app.png}"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Download</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://itunes.apple.com/ru/app/raspisanie-vuzov/id631171099?mt=8"  style="font-size: 10pt">Windows Store</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -61,18 +90,20 @@
                         <b>aTimeTable</b> позволяет узнать расписание пар в любое время в любом месте.
                         <br/>
                         <br/>
-                        * загрузка и хранение расписания для его просмотра даже в моменты недоступности сервера;  <br/>
-                        * расписание обновляется напрямую с сервера вуза, что позволяет всегда иметь доступ к актуальной его версии;  <br/>
-                        * работа с расписаниями нескольких групп и преподавателей через удобное переключение между ними;  <br/>
-                        * отображение полной информации о паре при нажатии на нее, с указанием преподавателя и полного названия дисциплины;  <br/>
-                        * отображение таймера, считающего время до конца пары или перерыва;  <br/>
-                        * яркая полоска, позволяющая быстро сориентироваться какая сейчас пара;  <br/>
-                        * отображения расписания на всю текущую неделю в альбомной ориентации;  <br/>
-                        * аккуратный и настраиваемый интерфейс.  <br/>
-                        <br/>  <br/>
-                        Страничка программы - http://alcsan.com/atimetable  <br/>
-                        Группа программы ВКонтакте - http://vk.com/atimetable      <br/>
-
+                        * загрузка и хранение расписания для его просмотра даже в моменты недоступности сервера; <br/>
+                        * расписание обновляется напрямую с сервера вуза, что позволяет всегда иметь доступ к актуальной
+                        его версии; <br/>
+                        * работа с расписаниями нескольких групп и преподавателей через удобное переключение между ними;
+                        <br/>
+                        * отображение полной информации о паре при нажатии на нее, с указанием преподавателя и полного
+                        названия дисциплины; <br/>
+                        * отображение таймера, считающего время до конца пары или перерыва; <br/>
+                        * яркая полоска, позволяющая быстро сориентироваться какая сейчас пара; <br/>
+                        * отображения расписания на всю текущую неделю в альбомной ориентации; <br/>
+                        * аккуратный и настраиваемый интерфейс. <br/>
+                        <br/> <br/>
+                        Страничка программы - http://alcsan.com/atimetable <br/>
+                        Группа программы ВКонтакте - http://vk.com/atimetable <br/>
 
 
                     </p>
@@ -82,14 +113,26 @@
         </div>
 
 
-        <div class="col s12 m4">
-            <div class="card-panel teal">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+        <div class="col s12 m12 l4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="../../img/google_play.png" style="width: 120px; height: 120px; "
+                         th:src="@{/resources/img/google_play.png}"/>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Download</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://itunes.apple.com/ru/app/raspisanie-vuzov/id631171099?mt=8"
+                           style="font-size: 10pt">Google Store</a>
+                    </div>
+                </div>
             </div>
         </div>
 
 
     </div>
+
+
 </div>
