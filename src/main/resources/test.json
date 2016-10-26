@@ -1,0 +1,62 @@
+{
+  "weekNumber": 9,
+  "metaData": {
+    "id": 364545,
+    "name": "Канова Олександра Андріївна",
+    "shortName": "Канова О.А.",
+    "description": "каф. менеджменту та бізнесу",
+    "type": "teacher",
+    "year": "2016",
+    "yearDisplayName": "2016/2017",
+    "startDate": "24-10-2016",
+    "endDate": "30-10-2016"
+  },
+  "weeks": [
+    {
+      "name": "Понедельник",
+      "displayName": "24 октября 2016",
+      "day": 1,
+      "date": 1477496705609
+    },
+    {
+      "name": "Вторник",
+      "displayName": "25 октября 2016",
+      "day": 1,
+      "date": 1477496705609
+    },
+    {
+      "name": "Среда",
+      "displayName": "26 октября 2016",
+      "day": 1,
+      "date": 1477496705609
+    }
+  ],
+  "scheduleElements": [
+    {
+      "day": 1,
+      "date": 1477496705610,
+      "startEpoch": 1477466100,
+      "start": "10:15",
+      "pair": 1,
+      "endEpoch": 1477469100,
+      "end": "11:50",
+      "breakStartEpoch": 23523523,
+      "breakStart": "11:00",
+      "breakEndEpoch": 1412,
+      "breakEnd": "11:05"
+    },
+    {
+      "day": 2,
+      "date": 1477496705611,
+      "startEpoch": 1477466100,
+      "start": "10:15",
+      "pair": 2,
+      "endEpoch": 1477469100,
+      "end": "11:50",
+      "breakStartEpoch": 23523523,
+      "breakStart": "11:00",
+      "breakEndEpoch": 1412,
+      "breakEnd": "11:05"
+    }
+  ]
+}

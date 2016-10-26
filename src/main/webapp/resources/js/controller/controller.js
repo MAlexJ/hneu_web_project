@@ -2,16 +2,12 @@
 
 // ************  Home Page  ******************
 myApp.controller('homeController', function ($scope, $http) {
-    $('.collapsible').collapsible({
-        accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
+
 });
 
 // ************  Teachers Page  ******************
 myApp.controller('teachersController', function ($scope, $http) {
-    $('.collapsible').collapsible({
-        accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    });
+
 });
 
 // ************  Timetable Page  ******************

@@ -9,7 +9,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
  * @author malex
  */
 @Configuration
-@ComponentScan(basePackages = "com.malex")
+@ComponentScan(basePackages = "com.hneu")
 public class AppConfig {
 
     @Bean
