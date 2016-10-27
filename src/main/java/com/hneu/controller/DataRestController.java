@@ -19,7 +19,7 @@ public class DataRestController {
     @Autowired
     private ScheduleService service;
 
-    @RequestMapping(path = "/schedule", method = RequestMethod.GET,
+    @RequestMapping(path = "/schedule_json", method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
     public Schedule getSchedule() {
