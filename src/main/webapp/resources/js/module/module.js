@@ -52,6 +52,13 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
             controller: 'commentsController'
         });
 
+    // ************  Schedule Page  ******************
+    $routeProvider.when('/schedule',
+        {
+            templateUrl: './schedule.html',
+            controller: 'scheduleController'
+        });
+
     // ************  Default Page  ******************
     $routeProvider.otherwise({redirectTo: '/home'});
 });

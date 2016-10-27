@@ -61,4 +61,12 @@ public class WebTemplateController {
         return "views/comments";
     }
 
+    /**
+     * @return template schedule.html
+     */
+    @RequestMapping(path = "/schedule", method = RequestMethod.GET)
+    public String schedule() {
+        return "views/schedule";
+    }
+
 }

@@ -32,4 +32,17 @@ myApp.controller('newsController', function ($scope, $http) {
 myApp.controller('commentsController', function ($scope, $http) {
 });
 
+// ************  Schedule Page  ******************
+myApp.controller('scheduleController', function ($scope, $http) {
+
+    // // goToSchedule
+    // // Login -> SpringSecurity
+    // $scope.goToSchedule = function (loginForm, login) {
+    //     $http.get('/schedule').success(function (data) {
+    //
+    //     });
+    // }
+
+});
+
 
