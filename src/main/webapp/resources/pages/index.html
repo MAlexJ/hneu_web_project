@@ -38,9 +38,10 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
+
     <!-- materialize: font -->
-    <link type='text/css' rel="stylesheet" th:href="@{/resources/font/roboto/Roboto-Regular.woff2}" href="../font/roboto/Roboto-Regular.woff2"/>
+    <link type='text/css' rel="stylesheet" th:href="@{/resources/font/roboto/Roboto-Regular.woff2}"
+          href="../font/roboto/Roboto-Regular.woff2"/>
 
     <!-- Style: icon -->
     <link rel="stylesheet" th:href="@{/resources/css/icon.css}" href="../css/icon.css"/>
@@ -48,12 +49,94 @@
     <!-- Style: CSS -->
     <link rel="stylesheet" th:href="@{/resources/css/style.css}" href="../css/style.css"/>
 
+
+    <!-- Style: Table CSS -->
+    <link rel="stylesheet" th:href="@{/resources/css/responsive-tables.css}" href="../css/responsive-tables.css"/>
+    <!-- JS: Table JS -->
+    <script th:src="@{/resources/js/lib/responsive-tables.js}" src="../js/lib/responsive-tables.js"
+            type="text/javascript"></script>
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width"/>
+
+
 </head>
 <body ng-app="myApp">
 
 <nav th:replace="fragments/header :: header"></nav>
 <main>
     <ng-view></ng-view>
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12 multi_files">
+                <h5>Small Word Table</h5>
+                <table class="responsive ">
+
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                        <th>Header 7</th>
+                        <th>Header 8</th>
+                    </tr>
+                    <tr>
+                        <td>row 1, cell 1</td>
+                        <td>row 1, cell 2</td>
+                        <td>row 1, cell 3</td>
+                        <td>row 1, cell 4</td>
+                        <td>row 1, cell 5</td>
+                        <td>row 1, cell 6<br/>
+                       row 1, cell 6<br/>
+                       row 1, cell 6<br/>
+                       row 1, cell 6<br/>
+                       row 1, cell 6<br/>
+                            </td>
+                        <td>row 1, cell 7</td>
+                        <td>row 1, cell 8</td>
+                    </tr>
+                    <tr>
+                        <td>row 2, cell 1</td>
+                        <td>row 2, cell 2</td>
+                        <td>row 2, cell 3</td>
+                        <td>row 2, cell 4</td>
+                        <td>row 2, cell 5</td>
+                        <td>row 2, cell 6</td>
+                        <td>row 2, cell 7</td>
+                        <td>row 2, cell 8</td>
+                    </tr>
+                    <tr>
+                        <td>row 3, cell 1</td>
+                        <td>row 3, cell 2</td>
+                        <td>row 3, cell 3</td>
+                        <td>row 3, cell 4</td>
+                        <td>row 3, cell 5</td>
+                        <td>row 3, cell 6</td>
+                        <td>row 3, cell 7</td>
+                        <td>row 3, cell 8</td>
+                    </tr>
+                    <tr>
+                        <td>row 4, cell 1</td>
+                        <td>row 4, cell 2</td>
+                        <td>row 4, cell 3</td>
+                        <td>row 4, cell 4</td>
+                        <td>row 4, cell 5</td>
+                        <td>row 4, cell 6</td>
+                        <td>row 4, cell 7</td>
+                        <td>row 4, cell 8</td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
 </main>
 <footer th:replace="fragments/footer :: footer"></footer>
 
